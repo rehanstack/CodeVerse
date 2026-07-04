@@ -1,0 +1,786 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#222;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width:100%;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+/* ================= NAVBAR ================= */
+
+header{
+    position: sticky;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo a{
+    font-size:28px;
+    font-weight:700;
+    color:#2563EB;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563EB;
+}
+
+.active{
+    color:#2563EB !important;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+}
+
+.login-btn,
+.register-btn{
+    padding:10px 20px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.login-btn{
+    color:#2563EB;
+    border:2px solid #2563EB;
+}
+
+.login-btn:hover{
+    background:#2563EB;
+    color:white;
+}
+
+.register-btn{
+    background:#2563EB;
+    color:white;
+}
+
+.register-btn:hover{
+    background:#1d4ed8;
+}
+/* ================= HERO ================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:15px 35px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2563EB;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-secondary{
+    border:2px solid #2563EB;
+    color:#2563EB;
+}
+
+.btn-secondary:hover{
+    background:#2563EB;
+    color:white;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+}
+.hero-text h1{
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+.hero{
+    padding:80px 0;
+}
+.hero-image img{
+    width:100%;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-18px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.hero{
+    background:linear-gradient(
+        to right,
+        #f8fbff,
+        #eef4ff
+    );
+}
+.btn-primary:hover,
+.btn-secondary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+/* ================= COURSES ================= */
+
+.courses{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.course-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-12px);
+}
+
+.course-card i{
+    font-size:70px;
+    color:#2563EB;
+    margin-bottom:25px;
+}
+
+.course-card h3{
+    margin-bottom:15px;
+}
+
+.course-card p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.course-card a{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563EB;
+    color:white;
+    border-radius:8px;
+}
+/* ================= FEATURES ================= */
+
+.features{
+    padding:100px 0;
+    background:#f8fbff;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:35px 25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card i{
+    font-size:50px;
+    color:#2563EB;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#666;
+    line-height:1.6;
+}
+/* ================= TESTIMONIALS ================= */
+
+.testimonials{
+    padding:100px 0;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.testimonial-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#666;
+    margin-top:15px;
+    line-height:1.6;
+}
+/* ================= FOOTER ================= */
+
+footer{
+    background:#1f2937;
+    color:white;
+    padding:60px 0 20px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-content a{
+    color:#ddd;
+}
+
+.footer-content ul li{
+    margin:10px 0;
+}
+
+.footer-content i{
+    font-size:28px;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:40px;
+    color:#bbb;
+}
+/*================ STATS ================*/
+
+.stats{
+    padding:80px 0;
+    background:#2563EB;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.stat-card{
+    text-align:center;
+    color:white;
+}
+
+.stat-card h2{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    font-size:18px;
+}
+/*================ CTA ================*/
+
+.cta{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    font-size:20px;
+    color:#666;
+    margin-bottom:35px;
+}
+#topBtn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+/*================ PAGE BANNER ================*/
+
+.page-banner{
+
+    background:#2563EB;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px 80px;
+
+}
+
+.page-banner h1{
+
+    font-size:60px;
+
+}
+
+.page-banner p{
+
+    font-size:20px;
+
+    margin-top:15px;
+
+}
+
+/*================ ALL COURSES ================*/
+
+.all-courses{
+
+    padding:100px 0;
+
+}
+
+.all-courses button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.all-courses button:hover{
+
+    background:#1d4ed8;
+
+}
+/*================ COURSE PAGE ================*/
+
+.course-hero{
+
+    background:#2563EB;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+.course-hero h1{
+
+    font-size:60px;
+
+}
+
+.course-hero p{
+
+    font-size:22px;
+
+    margin-top:20px;
+
+}
+
+.course-details{
+
+    padding:100px 0;
+
+}
+
+.course-layout{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+}
+
+.left-content h2{
+
+    margin:30px 0 15px;
+
+}
+
+.left-content ul{
+
+    padding-left:25px;
+
+    line-height:2;
+
+}
+
+.course-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+.course-box p{
+
+    margin:15px 0;
+
+}
+/*================ ABOUT PAGE ================*/
+
+.about-hero{
+
+background:#2563EB;
+
+color:white;
+
+text-align:center;
+
+padding:120px 20px;
+
+}
+
+.about-hero h1{
+
+font-size:60px;
+
+}
+
+.about-section{
+
+padding:100px 0;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+
+}
+
+.about-text h2{
+
+margin:20px 0;
+
+font-size:35px;
+
+}
+
+.about-text p{
+
+margin-bottom:25px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+/*================ PROJECTS ================*/
+
+.projects{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:12px;
+}
+
+.project-content p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.project-content a{
+    color:#2563EB;
+    font-weight:600;
+}
+.contact{
+
+padding:100px 0;
+
+}
+
+.contact form{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.contact input,
+.contact textarea{
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:17px;
+
+}
+
+.contact textarea{
+
+height:180px;
+
+resize:none;
+
+}
+@media(max-width:992px){
+
+.hero-content,
+.about-grid,
+.course-layout{
+    grid-template-columns:1fr;
+    flex-direction:column;
+    text-align:center;
+}
+
+.course-grid,
+.project-grid,
+.feature-grid,
+.stats-grid,
+.testimonial-grid,
+.footer-content{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.course-grid,
+.project-grid,
+.feature-grid,
+.stats-grid,
+.testimonial-grid,
+.footer-content{
+    grid-template-columns:1fr;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.page-banner h1{
+    font-size:40px;
+}
+
+}
