@@ -784,3 +784,117 @@ resize:none;
 }
 
 }
+
+/*================ REGISTER PAGE ================*/
+
+.register{
+    min-height:100vh;
+    background:#f4f7fc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.register-container{
+    width:1100px;
+    max-width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+.register-left{
+    background:#2563EB;
+    color:#fff;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.register-left h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.register-left p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.register-left img{
+    width:100%;
+}
+
+.register-right{
+    padding:60px;
+}
+
+.register-right h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#222;
+}
+
+.input-box{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.input-box i{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#2563EB;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px 15px 15px 50px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#2563EB;
+}
+
+.register-right button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2563EB;
+    color:#fff;
+    font-size:17px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.register-right button:hover{
+    background:#1d4ed8;
+}
+
+.login-link{
+    margin-top:25px;
+    text-align:center;
+}
+
+.login-link a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
